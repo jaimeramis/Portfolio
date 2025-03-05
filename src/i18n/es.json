@@ -1,0 +1,91 @@
+{
+  "navItem01": "Sobre mí",
+  "navItem02": "Habilidades",
+  "navItem03": "Proyectos",
+  "navItem04": "Marcas",
+  "navItem05": "Contacto",
+
+  "aboutTitle": "JAIME",
+  "aboutSubtitle": "Salesforce Marketing Cloud Email Specialist // Front End Developer",
+  "aboutText": "Hola, me llamo Jaime Ramis Barber. Aquí les presento mi portfolio actualizado hasta el día de hoy. Podéis investigar más sobre mí a través de los iconos de abajo y en toda la web. Sentíos libres de escribirme para más información. Gracias.",
+
+  "skillsTitle": "Habilidades",
+  "accordeonTitle01": "Desarrollo Web",
+  "accordeonTitle02": "Diseño",
+  "accordeonTitle03": "Pasivas",
+  "accordeonTitle04": "Certificaciones",
+
+  "programingItem01": "HTML, CSS, Javascript",
+  "programingItem02": "BOOTSTRAP, JQUERY, SASS, Tailwind CSS",
+  "programingItem03": "Svelte, Hugo, React",
+  "programingItem04": "Git, Github",
+  "programingItem05": "PHP, PYTHON, SQL",
+
+  "designItem01": "UX/UI",
+  "designItem02": "Adobe Photoshop, Figma",
+
+  "skillsItem01": "Trabajo en equipo",
+  "skillsItem02": "Orden",
+  "skillsItem03": "Entregas respetando el deadline",
+  "skillsItem04": "Disponible para eventos",
+  "skillsItem05": "Sentido del humor",
+
+  "certItem01": "Salesforce Marketing Cloud Email Specialist",
+  "certItem02": "Meta Front-End Developer Professional Certificate",
+  "certItem03": "JavaScript Algorithms and Data Structures",
+
+  "clientsTitle": "Marcas con las que he colaborado profesionalmente",
+
+  "projectsTitle": "Proyectos",
+  "projectsWeb": "Webs",
+  "projectsNews": "Newsletters",
+  "projectsBan": "Banners",
+
+  "webTitle00": "Página Web Mahou",
+  "webSubtitle00": "Nueva Web 2025",
+
+  "webTitle01": "Página Web Cerave",
+  "webSubtitle01": "Landing Page de Productos",
+
+  "webTitle02": "Página Web Caprabo",
+  "webSubtitle02": "Campaña Gimnastas",
+
+  "webTitle03": "Página Web Hematohub",
+  "webSubtitle03": "Actualizaciones de contenido",
+
+  "webTitle04": "Página Web Sanofi",
+  "webSubtitle04": "Landing de Concurso Fashioncramps",
+
+  "webTitle05": "Página Web Sanofi",
+  "webSubtitle05": "Landing de Concurso Ready Player Mom",
+
+  "webTitle06": "Página Web Loreal",
+  "webSubtitle06": "Landing Page de Productos",
+
+  "bannerTitle01": "Banners Ikea",
+  "bannerTitle02": "Banners Opel",
+  "bannerTitle03": "Banners Movistar",
+
+  "newsTitle01": "Newsletters Iberia",
+  "newsTitle02": "Newsletters Banco de Santander",
+  "newsTitle03": "Newsletters Mastercard",
+  "newsTitle04": "Newsletters PortAventura",
+
+  "formTitle": "Formulario",
+  "formName": "Nombre",
+  "formEmail": "Email",
+  "formSubject": "Asunto",
+  "formMessage": "Mensaje",
+  "formSubmit": "Enviar",
+
+  "formNameRequired": "Nombre requerido",
+  "formEmailRequired": "Email requerido",
+  "formInvalidEmail": "Formato de email invalido",
+  "formSubjectRequired": "Asunto requerido",
+  "formMessageRequired": "Mensaje requerido",
+
+  "footerSubtitle01": "Redes Sociales",
+  "footerSubtitle02": "Contacto",
+
+  "End": ""
+}

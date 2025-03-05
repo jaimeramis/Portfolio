@@ -1,0 +1,26 @@
+.clients-brands {
+  display: grid;
+  margin: 0 auto;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem 0;
+
+  .brand {
+    margin: 0 auto;
+  }
+}
+
+/***MEDIA QUERYS***/
+@media only screen and (max-width: $mq1) {
+  .clients-brands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: $mq3) {
+  .clients-brands {
+    .brand {
+      width: 90%;
+    }
+  }
+}
+/***END MEDIA QUERYS***/

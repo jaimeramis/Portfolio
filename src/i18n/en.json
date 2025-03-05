@@ -1,0 +1,91 @@
+{
+  "navItem01": "About",
+  "navItem02": "Skills",
+  "navItem03": "Projects",
+  "navItem04": "Brands",
+  "navItem05": "Contact",
+
+  "aboutTitle": "JAIME",
+  "aboutSubtitle": "Salesforce Marketing Cloud Email Specialist // Front End Developer",
+  "aboutText": "Hello, my name is Jaime Ramis Barber. Here I present you my portfolio updated until today. You can find out more about me through the icons below and throughout the web. Feel free to write me for more information. Thank you.",
+
+  "skillsTitle": "Skills",
+  "accordeonTitle01": "Web Development",
+  "accordeonTitle02": "Design",
+  "accordeonTitle03": "Skills",
+  "accordeonTitle04": "Certifications",
+
+  "programingItem01": "HTML, CSS, Javascript",
+  "programingItem02": "BOOTSTRAP, JQUERY, SASS, Tailwind CSS",
+  "programingItem03": "Svelte, Hugo, React",
+  "programingItem04": "Git, Github",
+  "programingItem05": "PHP, PYTHON, SQL",
+
+  "designItem01": "UX/UI",
+  "designItem02": "Adobe Photoshop, Figma",
+
+  "skillsItem01": "Teamwork",
+  "skillsItem02": "Order",
+  "skillsItem03": "Deliveries respecting the deadline",
+  "skillsItem04": "Available for events",
+  "skillsItem05": "Sense of humor",
+
+  "certItem01": "Salesforce Marketing Cloud Email Specialist",
+  "certItem02": "Meta Front-End Developer Professional Certificate",
+  "certItem03": "JavaScript Algorithms and Data Structures",
+
+  "clientsTitle": "Brands for which I have worked",
+
+  "projectsTitle": "Projects",
+  "projectsWeb": "Webs",
+  "projectsNews": "Newsletters",
+  "projectsBan": "Banners",
+
+  "webTitle00": "Webpage Mahou",
+  "webSubtitle00": "New Website 2025",
+
+  "webTitle01": "Webpage Cerave",
+  "webSubtitle01": "Products Landing Page",
+
+  "webTitle02": "Webpage Caprabo",
+  "webSubtitle02": "Gimnastas Campaign",
+
+  "webTitle03": "Webpage Hematohub",
+  "webSubtitle03": "Content Updates",
+
+  "webTitle04": "Webpage Sanofi",
+  "webSubtitle04": "Fashioncramps Contest Landing",
+
+  "webTitle05": "Webpage Sanofi",
+  "webSubtitle05": "Ready Player Mom Contest Landing",
+
+  "webTitle06": "Webpage Loreal",
+  "webSubtitle06": "Products Landing Page",
+
+  "bannerTitle01": "Banners Ikea",
+  "bannerTitle02": "Banners Opel",
+  "bannerTitle03": "Banners Movistar",
+
+  "newsTitle01": "Newsletters Iberia",
+  "newsTitle02": "Newsletters Banco de Santander",
+  "newsTitle03": "Newsletters Mastercard",
+  "newsTitle04": "Newsletters PortAventura",
+
+  "formTitle": "Form",
+  "formName": "Name",
+  "formEmail": "Email",
+  "formSubject": "Subject",
+  "formMessage": "Message",
+  "formSubmit": "Submit",
+
+  "formNameRequired": "Name is required",
+  "formEmailRequired": "Email is required",
+  "formInvalidEmail": "Invalid email format",
+  "formSubjectRequired": "Subject is required",
+  "formMessageRequired": "Message is required",
+
+  "footerSubtitle01": "Social Media",
+  "footerSubtitle02": "Contact",
+
+  "End": ""
+}

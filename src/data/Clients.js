@@ -1,0 +1,86 @@
+export const clientsList = [
+  {
+    id: 1,
+    name: "Inditex",
+    image: "/images/logos/inditex.png",
+    class: "brand",
+  },
+  {
+    id: 2,
+    name: "CocaCola",
+    image: "/images/logos/cocaCola.png",
+    class: "brand",
+  },
+  {
+    id: 3,
+    name: "BurgerKing",
+    image: "/images/logos/burgerKing.png",
+    class: "brand",
+  },
+  {
+    id: 4,
+    name: "Mahou",
+    image: "/images/logos/mahou.png",
+    class: "brand",
+  },
+  {
+    id: 5,
+    name: "Microsoft",
+    image: "/images/logos/microsoft.png",
+    class: "brand",
+  },
+  {
+    id: 6,
+    name: "Santander",
+    image: "/images/logos/santander.png",
+    class: "brand",
+  },
+  {
+    id: 7,
+    name: "Opel",
+    image: "/images/logos/opel.png",
+    class: "brand",
+  },
+  {
+    id: 8,
+    name: "Movistar",
+    image: "/images/logos/movistar.png",
+    class: "brand",
+  },
+  {
+    id: 9,
+    name: "PortAventura",
+    image: "/images/logos/paw.png",
+    class: "brand",
+  },
+  {
+    id: 10,
+    name: "Mastercard",
+    image: "/images/logos/mastercard.png",
+    class: "brand",
+  },
+  {
+    id: 11,
+    name: "Loreal",
+    image: "/images/logos/loreal.png",
+    class: "brand",
+  },
+  {
+    id: 12,
+    name: "Ikea",
+    image: "/images/logos/ikea.png",
+    class: "brand",
+  },
+  {
+    id: 13,
+    name: "Caprabo",
+    image: "/images/logos/caprabo.png",
+    class: "brand",
+  },
+  {
+    id: 14,
+    name: "Iberia",
+    image: "/images/logos/iberia.png",
+    class: "brand",
+  },
+];
