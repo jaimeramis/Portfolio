@@ -33,16 +33,23 @@
 
   .portfolio__intro_profiles {
     display: flex;
+    align-items: center;
     gap: 1rem;
-
-    img {
-      max-width: 5rem;
-      width: 100%;
-    }
 
     a {
       transition: all 0.3s ease-out;
     }
+  }
+
+  .linkdln,
+  .trailhead {
+    max-width: 5rem;
+    width: 100%;
+  }
+
+  .github {
+    max-width: 3.8rem;
+    width: 100%;
   }
 
   .portfolio__intro_profiles a:hover {
@@ -116,10 +123,15 @@
     .portfolio__intro_profiles {
       display: flex;
       justify-content: center;
+    }
 
-      img {
-        max-width: 5rem;
-      }
+    .linkdln,
+    .trailhead {
+      max-width: 4rem;
+    }
+
+    .github {
+      max-width: 3rem;
     }
   }
 }

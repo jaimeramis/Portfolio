@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { withNamespaces } from "react-i18next";
 import urls from "../data/urls.json";
 

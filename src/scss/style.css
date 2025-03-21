@@ -234,11 +234,22 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16rem;
+  width: 20rem;
 }
-.navbar-social img {
-  width: 4rem;
+.navbar-social a {
+  width: 4.6rem;
+}
+.navbar-social a img {
   cursor: pointer;
+}
+.navbar-social .linkdln,
+.navbar-social .trailhead {
+  max-width: 4rem;
+  width: 100%;
+}
+.navbar-social .github {
+  max-width: 2.8rem;
+  width: 100%;
 }
 
 .navbar-languages {
@@ -457,14 +468,20 @@ ul {
 }
 .portfolio__intro_container .portfolio__intro_profiles {
   display: flex;
+  align-items: center;
   gap: 1rem;
-}
-.portfolio__intro_container .portfolio__intro_profiles img {
-  max-width: 5rem;
-  width: 100%;
 }
 .portfolio__intro_container .portfolio__intro_profiles a {
   transition: all 0.3s ease-out;
+}
+.portfolio__intro_container .linkdln,
+.portfolio__intro_container .trailhead {
+  max-width: 5rem;
+  width: 100%;
+}
+.portfolio__intro_container .github {
+  max-width: 3.8rem;
+  width: 100%;
 }
 .portfolio__intro_container .portfolio__intro_profiles a:hover {
   transform: translate(0, -0.5rem);
@@ -529,8 +546,12 @@ ul {
     display: flex;
     justify-content: center;
   }
-  .portfolio__intro_container .portfolio__intro_profiles img {
-    max-width: 5rem;
+  .portfolio__intro_container .linkdln,
+  .portfolio__intro_container .trailhead {
+    max-width: 4rem;
+  }
+  .portfolio__intro_container .github {
+    max-width: 3rem;
   }
 }
 @media only screen and (max-width: 360px) {

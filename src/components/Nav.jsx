@@ -50,11 +50,14 @@ function Nav({ t }) {
           </ul>
           {/* SOCIAL MEDIA */}
           <div className="navbar-social">
-            <a href={urls.trailhead} target="_blank">
-              <img src="/images/trailhead_logo.png" alt="Linkedln" />
+            <a href={urls.trailhead} rel="noreferrer" target="_blank">
+              <img className="trailhead" src="/images/trailhead_logo.png" alt="TrailHead" />
             </a>
-            <a href={urls.linkedln} target="_blank">
-              <img src="/images/linkdln_logo.png" alt="Linkedln" />
+            <a href={urls.linkedln} rel="noreferrer" target="_blank">
+              <img className="linkdln" src="/images/linkdln_logo.png" alt="Linkedln" />
+            </a>
+            <a href={urls.github} rel="noreferrer" target="_blank">
+              <img className="github" src="/images/github_logo.png" alt="GitHub" />
             </a>
           </div>
           {/* END SOCIAL MEDIA */}
