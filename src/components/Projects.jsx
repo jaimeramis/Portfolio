@@ -21,41 +21,55 @@ const Projects = ({ t }) => {
       category: "web",
       title: t("webTitle01"),
       subtitle: t("webSubtitle01"),
-      link: urls.cerave,
-      imageClass: "cerave",
+      link: urls.gl,
+      imageClass: "gl",
     },
     {
       category: "web",
       title: t("webTitle02"),
       subtitle: t("webSubtitle02"),
-      link: urls.caprabo,
-      imageClass: "caprabo",
+      link: urls.neom,
+      imageClass: "neom",
     },
     {
       category: "web",
       title: t("webTitle03"),
       subtitle: t("webSubtitle03"),
-      link: urls.hematohub,
-      imageClass: "hematohub",
+      link: urls.cerave,
+      imageClass: "cerave",
     },
     {
       category: "web",
       title: t("webTitle04"),
       subtitle: t("webSubtitle04"),
-      link: urls.fashion,
-      imageClass: "fashion",
+      link: urls.caprabo,
+      imageClass: "caprabo",
     },
     {
       category: "web",
       title: t("webTitle05"),
       subtitle: t("webSubtitle05"),
-      link: urls.player,
-      imageClass: "player",
+      link: urls.hematohub,
+      imageClass: "hematohub",
     },
     {
       category: "web",
       title: t("webTitle06"),
       subtitle: t("webSubtitle06"),
+      link: urls.fashion,
+      imageClass: "fashion",
+    },
+    {
+      category: "web",
+      title: t("webTitle07"),
+      subtitle: t("webSubtitle07"),
+      link: urls.player,
+      imageClass: "player",
+    },
+    {
+      category: "web",
+      title: t("webTitle08"),
+      subtitle: t("webSubtitle08"),
       link: urls.loreal,
       imageClass: "loreal",
     },
@@ -132,7 +146,7 @@ const Projects = ({ t }) => {
         {projectsData
           .filter((project) => project.category === activeCategory || activeCategory === "web")
           .map((project, index) => (
-            <a key={index} href={project.link} target="_blank" className={`projects ${project.category}`}>
+            <a rel="noreferrer" key={index} href={project.link} target="_blank" className={`projects ${project.category}`}>
               <div className={`projects-image ${project.imageClass}`}></div>
               <h3 className="pt20">{project.title}</h3>
               <p>{project.subtitle}</p>

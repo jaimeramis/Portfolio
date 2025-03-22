@@ -734,6 +734,12 @@ ul {
 .projects-container .projects-image.mahou {
   background-image: url("/images/projects/mahou.jpg");
 }
+.projects-container .projects-image.gl {
+  background-image: url("/images/projects/5050gl.jpg");
+}
+.projects-container .projects-image.neom {
+  background-image: url("/images/projects/neom.png");
+}
 .projects-container .projects-image.cerave {
   background-image: url("/images/projects/cerave.jpg");
 }
