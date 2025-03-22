@@ -16,18 +16,19 @@
   "accordeonTitle04": "Certificaciones",
 
   "programingItem01": "HTML, CSS, Javascript",
-  "programingItem02": "BOOTSTRAP, JQUERY, SASS, Tailwind CSS",
+  "programingItem02": "BOOTSTRAP, SASS, Tailwind CSS, JQUERY",
   "programingItem03": "Svelte, Hugo, React",
   "programingItem04": "Git, Github",
   "programingItem05": "PHP, PYTHON, SQL",
 
   "designItem01": "UX/UI",
-  "designItem02": "Adobe Photoshop, Figma",
+  "designItem02": "Figma",
+  "designItem03": "Adobe Photoshop",
 
   "skillsItem01": "Trabajo en equipo",
-  "skillsItem02": "Orden",
-  "skillsItem03": "Entregas respetando el deadline",
-  "skillsItem04": "Disponible para eventos",
+  "skillsItem02": "Toma de decisiones",
+  "skillsItem03": "Adaptabilidad",
+  "skillsItem04": "Resiliencia",
   "skillsItem05": "Sentido del humor",
 
   "certItem01": "Salesforce Marketing Cloud Email Specialist",

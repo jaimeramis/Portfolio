@@ -20,7 +20,7 @@ const SkillCard = ({ title, icon, items, t }) => (
 function Skills({ t }) {
   const skillsData = [
     { title: "accordeonTitle01", icon: <FaAtom />, items: ["programingItem01", "programingItem02", "programingItem03", "programingItem04", "programingItem05"] },
-    { title: "accordeonTitle02", icon: <CgFigma />, items: ["designItem01", "designItem02"] },
+    { title: "accordeonTitle02", icon: <CgFigma />, items: ["designItem01", "designItem02", "designItem03"] },
     { title: "accordeonTitle03", icon: <FaGear />, items: ["skillsItem01", "skillsItem02", "skillsItem03", "skillsItem04", "skillsItem05"] },
     { title: "accordeonTitle04", icon: <FaAward />, items: ["certItem01", "certItem02", "certItem03"] },
   ];

@@ -59,6 +59,7 @@ const Projects = ({ t }) => {
       link: urls.loreal,
       imageClass: "loreal",
     },
+    /*
     {
       category: "banner",
       title: t("bannerTitle01"),
@@ -80,6 +81,7 @@ const Projects = ({ t }) => {
       link: urls.movistar,
       imageClass: "movistar",
     },
+    */
     {
       category: "news",
       title: t("newsTitle01"),
@@ -120,9 +122,11 @@ const Projects = ({ t }) => {
         <a className={`news${activeCategory === "news" ? " active" : ""}`} onClick={() => handleButtonClick("news")}>
           {t("projectsNews")}
         </a>
+        {/*
         <a className={`banner${activeCategory === "banner" ? " active" : ""}`} onClick={() => handleButtonClick("banner")}>
           {t("projectsBan")}
         </a>
+        */}
       </div>
       <div className="projects-container">
         {projectsData

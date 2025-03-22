@@ -749,15 +749,6 @@ ul {
 .projects-container .projects-image.player {
   background-image: url("/images/projects/player.jpg");
 }
-.projects-container .projects-image.ikea {
-  background-image: url("/images/projects/ikea.jpg");
-}
-.projects-container .projects-image.opel {
-  background-image: url("/images/projects/opel.jpg");
-}
-.projects-container .projects-image.movistar {
-  background-image: url("/images/projects/movistar.jpg");
-}
 .projects-container .projects-image.iberia {
   background-image: url("/images/projects/nl_iberia.jpg");
 }

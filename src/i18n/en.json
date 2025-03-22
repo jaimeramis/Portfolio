@@ -16,25 +16,26 @@
   "accordeonTitle04": "Certifications",
 
   "programingItem01": "HTML, CSS, Javascript",
-  "programingItem02": "BOOTSTRAP, JQUERY, SASS, Tailwind CSS",
+  "programingItem02": "BOOTSTRAP, SASS, Tailwind CSS, JQUERY",
   "programingItem03": "Svelte, Hugo, React",
   "programingItem04": "Git, Github",
   "programingItem05": "PHP, PYTHON, SQL",
 
   "designItem01": "UX/UI",
-  "designItem02": "Adobe Photoshop, Figma",
+  "designItem02": "Figma",
+  "designItem03": "Adobe Photoshop",
 
-  "skillsItem01": "Teamwork",
-  "skillsItem02": "Order",
-  "skillsItem03": "Deliveries respecting the deadline",
-  "skillsItem04": "Available for events",
+  "skillsItem01": "Trabajo en equipo",
+  "skillsItem02": "Decision-Making",
+  "skillsItem03": "Adaptability",
+  "skillsItem04": "Resilience",
   "skillsItem05": "Sense of humor",
 
   "certItem01": "Salesforce Marketing Cloud Email Specialist",
   "certItem02": "Meta Front-End Developer Professional Certificate",
   "certItem03": "JavaScript Algorithms and Data Structures",
 
-  "clientsTitle": "Brands for which I have worked",
+  "clientsTitle": "Brands for which I have worked with",
 
   "projectsTitle": "Projects",
   "projectsWeb": "Webs",

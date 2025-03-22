@@ -8,11 +8,14 @@ function Footer({ t }) {
         <div className="footer_social">
           <h2>{t("footerSubtitle01")}</h2>
           <div className="footer_social_icons">
-            <a href={urls.trailhead} target="_blank">
+            <a href={urls.trailhead} rel="noreferrer" target="_blank">
               <img src="/images/trailhead_logo.png" alt="TrailHead" />
             </a>
-            <a href={urls.linkedln} target="_blank">
+            <a href={urls.linkedln} rel="noreferrer" target="_blank">
               <img src="/images/linkdln_logo.png" alt="Linkedln" />
+            </a>
+            <a href={urls.github} rel="noreferrer" target="_blank">
+              <img src="/images/github_logo.png" alt="GitHub" />
             </a>
           </div>
         </div>
