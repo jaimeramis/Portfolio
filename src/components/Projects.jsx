@@ -4,7 +4,7 @@ import projects from "../data/projects.json";
 
 function ProjectItem({ title, type, role, stack, live, documentation, image, trigger, index }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-40% 0px -40% 0px" });
+  const isInView = useInView(ref, { once: true, margin: "-30% 0px -30% 0px" });
 
   return (
     <motion.div
