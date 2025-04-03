@@ -1,33 +1,27 @@
-import { withNamespaces } from "react-i18next";
-import urls from "../data/urls.json";
-
-function Footer({ t }) {
+function Footer() {
   return (
     <>
-      <footer id="contact">
-        <div className="footer_social">
-          <h2>{t("footerSubtitle01")}</h2>
-          <div className="footer_social_icons">
-            <a href={urls.trailhead} rel="noreferrer" target="_blank">
-              <img src="/images/trailhead_logo.png" alt="TrailHead" />
+      <footer>
+        <div className="footer-box">
+          <p>©2025 Jaime Ramis. All rights reserved</p>
+          <nav className="footer__nav">
+            <a className="footer__nav--item" href="#about" rel="noopener noreferrer">
+              <h4>About</h4>
             </a>
-            <a href={urls.linkedln} rel="noreferrer" target="_blank">
-              <img src="/images/linkdln_logo.png" alt="Linkedln" />
+            <a className="footer__nav--item" href="#projects" rel="noopener noreferrer">
+              <h4>Projects</h4>
             </a>
-            <a href={urls.github} rel="noreferrer" target="_blank">
-              <img src="/images/github_logo.png" alt="GitHub" />
+            <a className="footer__nav--item" href="#technologies" rel="noopener noreferrer">
+              <h4>Technologies</h4>
             </a>
-          </div>
-        </div>
-        <div className="footer_contact">
-          <h2>{t("footerSubtitle02")}</h2>
-          <p>Email: jaime.ramis1995@gmail.com</p>
-          <p>Tlf: +34 660 80 39 71</p>
+            <a className="footer__nav--item" href="#clients" rel="noopener noreferrer">
+              <h4>Clients</h4>
+            </a>
+          </nav>
         </div>
       </footer>
-      <p className="textCenter small-xs">© 2023. Jaime Ramis Barber</p>
     </>
   );
 }
 
-export default withNamespaces()(Footer);
+export default Footer;

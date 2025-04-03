@@ -1,0 +1,150 @@
+@use "base" as *;
+
+.clients-box {
+  background-color: $color-secondary;
+
+  .clients__content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .clients__profile {
+      padding-bottom: 1rem;
+    }
+
+    .clients__profile--section {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    .clients__profile--title {
+      font-family: "Gotham-Light", arial, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      padding-bottom: 10px;
+    }
+
+    .clients__profile--text {
+      font-size: 16px;
+    }
+
+    .clients__stack {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 2rem 0;
+
+      .clients__stack--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+
+        img {
+          width: 13rem;
+        }
+      }
+    }
+  }
+}
+
+/**MEDIA QUERIES**/
+@media only screen and (max-width: $mq2) {
+  .clients-box {
+    padding: 4rem 0;
+  }
+}
+@media only screen and (max-width: $mq4) {
+  .clients-box {
+    .clients__content {
+      .clients__profile--section {
+        font-size: 1rem;
+      }
+
+      .clients__profile--title {
+        font-size: 2rem;
+      }
+
+      .clients__profile--text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq5) {
+  .clients-box {
+    .clients__content {
+      .clients__profile--section {
+        font-size: 1rem;
+      }
+
+      .clients__profile--title {
+        font-size: 1.6rem;
+      }
+
+      .clients__profile--text {
+        font-size: 0.8rem;
+      }
+
+      .clients__stack {
+        .clients__stack--item {
+          img {
+            width: 10rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq6) {
+  .clients-box {
+    padding: 2rem 0;
+
+    .clients__content {
+      .clients__stack {
+        .clients__stack--item {
+          img {
+            width: 9rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq7) {
+  .clients-box {
+    .clients__content {
+      .clients__profile--section {
+        font-size: 1rem;
+      }
+
+      .clients__profile--title {
+        font-size: 1.4rem;
+      }
+
+      .clients__profile--text {
+        font-size: 0.8rem;
+      }
+
+      .clients__stack {
+        .clients__stack--item {
+          img {
+            width: 8rem;
+          }
+        }
+      }
+    }
+  }
+}
+/**END MEDIA QUERIES**/

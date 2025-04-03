@@ -1,0 +1,232 @@
+@use "base" as *;
+
+.hero-box {
+  .hero__bg {
+    background-image: url("/images/bg-hero.svg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .hero__content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    cursor: default;
+
+    .hero__content--title {
+      h2 {
+        font-family: "Gotham-Light", arial, sans-serif;
+        font-weight: 400;
+        font-size: 6rem;
+        text-align: left;
+        display: block;
+        position: relative;
+        padding: 5px; /* Espacio para el subrayado */
+        transition: transform 0.4s ease, color 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px); /* Mueve el título hacia arriba */
+        }
+
+        // Subrayado de fondo para "Jaime Ramis"
+        span {
+          position: relative;
+          display: inline-block;
+          padding: 5px; /* Espacio para el subrayado */
+          transition: background-color 0.3s ease;
+        }
+
+        // Fondo que se activa en hover
+        &:hover span {
+          background-color: $color-primary; /* Color de fondo para el subrayado */
+          color: $color-secondary; /* Cambiar el color del texto si lo deseas */
+        }
+      }
+    }
+    .hero__content--subtitle {
+      h1 {
+        font-size: 12rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 4rem 0;
+        transition: transform 0.4s ease, color 0.3s ease;
+
+        &:hover {
+          transform: translateY(-8px); /* Mueve el título hacia arriba */
+        }
+      }
+    }
+    .hero__content--text {
+      h2 {
+        font-family: "Gotham-Light", arial, sans-serif;
+        font-weight: 400;
+        font-size: 6rem;
+        text-align: right;
+        position: relative;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: translateY(-5px); /* Mueve el título hacia arriba */
+        }
+
+        // Subrayar "Web Portfolio" cuando se hace hover
+        span {
+          position: relative;
+          display: inline-block;
+        }
+
+        // Subrayado en el hover
+        &:hover span::after {
+          content: "";
+          position: absolute;
+          bottom: -2px; /* Pone la línea justo debajo del texto */
+          left: 0;
+          width: 100%; /* Expande el subrayado a lo largo del span */
+          height: 2px;
+          background-color: $color-primary;
+          transition: width 0.3s ease-in-out; /* Transición para la expansión del subrayado */
+        }
+
+        // Subrayado inicial (sin hover)
+        span::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 0; /* Inicialmente, el subrayado no es visible */
+        }
+      }
+    }
+  }
+}
+
+/**MEDIA QUERYS**/
+@media only screen and (max-width: $mq0) {
+  .hero-box {
+    .hero__content {
+      .hero__content--title {
+        h2 {
+          font-size: 4rem;
+        }
+      }
+      .hero__content--subtitle {
+        h1 {
+          font-size: 10rem;
+        }
+      }
+      .hero__content--text {
+        h2 {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq1) {
+  .hero-box {
+    .hero__content {
+      .hero__content--title {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+      .hero__content--subtitle {
+        h1 {
+          font-size: 8rem;
+        }
+      }
+      .hero__content--text {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq2) {
+  .hero-box {
+    .hero__content {
+      .hero__content--title {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      .hero__content--subtitle {
+        h1 {
+          font-size: 6rem;
+        }
+      }
+      .hero__content--text {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq4) {
+  .hero-box {
+    .hero__content {
+      .hero__content--title {
+        h2 {
+          font-size: 1.4rem;
+        }
+      }
+      .hero__content--subtitle {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      .hero__content--text {
+        h2 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq5) {
+  .hero-box {
+    .hero__content {
+      padding: 2rem 0;
+    }
+  }
+}
+@media only screen and (max-width: $mq6) {
+  .hero-box {
+    .hero__content {
+      .hero__content--subtitle {
+        h1 {
+          padding: 2rem 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq7) {
+  .hero-box {
+    .hero__content {
+      padding: 1rem 0;
+      .hero__content--title {
+        h2 {
+          font-size: 1rem;
+        }
+      }
+      .hero__content--subtitle {
+        h1 {
+          font-size: 2rem;
+          padding: 1.2rem 0;
+        }
+      }
+      .hero__content--text {
+        h2 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+/**END MEDIA QUERYS**/

@@ -1,15 +1,28 @@
-import { withNamespaces } from "react-i18next";
-import { clientsList } from "../data/Clients";
+import clients from "../data/clients.json";
 
-function Clients({ t }) {
-  const listingClients = clientsList.map((clientsList) => <img key={clientsList.id} className={clientsList.class} src={clientsList.image} alt={clientsList.name} />);
-
+function Clients() {
   return (
-    <section id="brand" className="section-container">
-      <h2 className="section-title">{t("clientsTitle")}</h2>
-      <div className="clients-brands">{listingClients}</div>
-    </section>
+    <div className="clients-box" id="clients">
+      <div className="clients__content">
+        <div className="clients__profile">
+          <div className="clients__profile--section">
+            <img src="/images/info-icons/icon.svg" alt="Project Icon" />
+            <p>Technological Stack</p>
+          </div>
+          <div className="clients__profile--title">
+            <h4>Actual Profiency</h4>
+          </div>
+        </div>
+        <div className="clients__stack">
+          {clients.map(({ title, image }, index) => (
+            <div key={index} className="clients__stack--item">
+              <img src={image} alt={title} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default withNamespaces()(Clients);
+export default Clients;

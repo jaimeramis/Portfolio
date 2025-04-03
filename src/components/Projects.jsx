@@ -1,160 +1,59 @@
-import { useState } from "react";
-import { withNamespaces } from "react-i18next";
-import urls from "../data/urls.json";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import projects from "../data/projects.json";
 
-const Projects = ({ t }) => {
-  const [activeCategory, setActiveCategory] = useState("web");
-
-  const handleButtonClick = (category) => {
-    setActiveCategory(category);
-  };
-
-  const projectsData = [
-    {
-      category: "web",
-      title: t("webTitle00"),
-      subtitle: t("webSubtitle00"),
-      link: urls.mahou,
-      imageClass: "mahou",
-    },
-    {
-      category: "web",
-      title: t("webTitle01"),
-      subtitle: t("webSubtitle01"),
-      link: urls.gl,
-      imageClass: "gl",
-    },
-    {
-      category: "web",
-      title: t("webTitle02"),
-      subtitle: t("webSubtitle02"),
-      link: urls.neom,
-      imageClass: "neom",
-    },
-    {
-      category: "web",
-      title: t("webTitle03"),
-      subtitle: t("webSubtitle03"),
-      link: urls.cerave,
-      imageClass: "cerave",
-    },
-    {
-      category: "web",
-      title: t("webTitle04"),
-      subtitle: t("webSubtitle04"),
-      link: urls.caprabo,
-      imageClass: "caprabo",
-    },
-    {
-      category: "web",
-      title: t("webTitle05"),
-      subtitle: t("webSubtitle05"),
-      link: urls.hematohub,
-      imageClass: "hematohub",
-    },
-    {
-      category: "web",
-      title: t("webTitle06"),
-      subtitle: t("webSubtitle06"),
-      link: urls.fashion,
-      imageClass: "fashion",
-    },
-    {
-      category: "web",
-      title: t("webTitle07"),
-      subtitle: t("webSubtitle07"),
-      link: urls.player,
-      imageClass: "player",
-    },
-    {
-      category: "web",
-      title: t("webTitle08"),
-      subtitle: t("webSubtitle08"),
-      link: urls.loreal,
-      imageClass: "loreal",
-    },
-    /*
-    {
-      category: "banner",
-      title: t("bannerTitle01"),
-      subtitle: "",
-      link: urls.ikea,
-      imageClass: "ikea",
-    },
-    {
-      category: "banner",
-      title: t("bannerTitle02"),
-      subtitle: "",
-      link: urls.opel,
-      imageClass: "opel",
-    },
-    {
-      category: "banner",
-      title: t("bannerTitle03"),
-      subtitle: "",
-      link: urls.movistar,
-      imageClass: "movistar",
-    },
-    */
-    {
-      category: "news",
-      title: t("newsTitle01"),
-      subtitle: "",
-      link: urls.iberia,
-      imageClass: "iberia",
-    },
-    {
-      category: "news",
-      title: t("newsTitle02"),
-      subtitle: "",
-      link: urls.santander,
-      imageClass: "santander",
-    },
-    {
-      category: "news",
-      title: t("newsTitle03"),
-      subtitle: "",
-      link: urls.mastercard,
-      imageClass: "mastercard",
-    },
-    {
-      category: "news",
-      title: t("newsTitle04"),
-      subtitle: "",
-      link: urls.portAventura,
-      imageClass: "portAventura",
-    },
-  ];
+function ProjectItem({ title, type, role, stack, live, documentation, image, trigger, index }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-40% 0px -40% 0px" });
 
   return (
-    <section id="projects" className="section-container">
-      <h2 className="section-title pb30">{t("projectsTitle")}</h2>
-      <div className="projects-buttons">
-        <a className={`web${activeCategory === "web" ? " active" : ""}`} onClick={() => handleButtonClick("web")}>
-          {t("projectsWeb")}
+    <motion.div
+      ref={ref}
+      className="projects__content--items"
+      initial={{ opacity: 0 }} // Inicia con mayor desplazamiento
+      animate={isInView ? { opacity: 1, y: 0 } : {}} // Se mueve hacia arriba y aparece
+      transition={{
+        duration: 0.8, // Duración ajustada para mayor suavidad
+        ease: "easeInOut", // Asegura un movimiento más suave al principio y al final
+        delay: index * 0.2, // Retraso ajustado para cada elemento en la secuencia
+      }}>
+      <h4 dangerouslySetInnerHTML={{ __html: title }}></h4>
+      <p dangerouslySetInnerHTML={{ __html: type }}></p>
+      <p dangerouslySetInnerHTML={{ __html: role }}></p>
+      <p dangerouslySetInnerHTML={{ __html: stack }}></p>
+      <div className="projects__content--btn">
+        <a className="btn-1" href={live} target="_blank" rel="noopener noreferrer">
+          <p>Live Work</p>
         </a>
-        <a className={`news${activeCategory === "news" ? " active" : ""}`} onClick={() => handleButtonClick("news")}>
-          {t("projectsNews")}
+        <a className={`btn-2 ${trigger}`} href={documentation} target="_blank" rel="noopener noreferrer">
+          <p>Documentation Work</p>
         </a>
-        {/*
-        <a className={`banner${activeCategory === "banner" ? " active" : ""}`} onClick={() => handleButtonClick("banner")}>
-          {t("projectsBan")}
-        </a>
-        */}
       </div>
-      <div className="projects-container">
-        {projectsData
-          .filter((project) => project.category === activeCategory || activeCategory === "web")
-          .map((project, index) => (
-            <a rel="noreferrer" key={index} href={project.link} target="_blank" className={`projects ${project.category}`}>
-              <div className={`projects-image ${project.imageClass}`}></div>
-              <h3 className="pt20">{project.title}</h3>
-              <p>{project.subtitle}</p>
-            </a>
-          ))}
-      </div>
-    </section>
+      <div className={`projects__bg ${image}`}></div>
+    </motion.div>
   );
-};
+}
 
-export default withNamespaces()(Projects);
+function Projects() {
+  return (
+    <div className="projects-box" id="projects">
+      <div className="projects__profile">
+        <div className="projects__profile--section">
+          <img src="/images/info-icons/icon.svg" alt="Project Icon" />
+          <p>My Projects</p>
+        </div>
+        <div className="projects__profile--title">
+          <h4>Selected Works</h4>
+        </div>
+      </div>
+
+      <div className="projects__content">
+        {projects.map((project, index) => (
+          <ProjectItem key={index} {...project} index={index} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Projects;

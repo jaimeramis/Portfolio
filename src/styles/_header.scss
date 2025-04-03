@@ -1,0 +1,194 @@
+@use "base" as *;
+
+/**TRIGGER**/
+.desktop {
+  display: block;
+  opacity: 1;
+  position: relative;
+  z-index: 999;
+}
+.mobile {
+  display: none;
+  opacity: 0;
+}
+/**END TRIGGER**/
+
+header {
+  padding: 1rem 0;
+  background-color: $color-secondary;
+  border-bottom: 1px solid gainsboro;
+}
+
+.header-box {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav__desktop {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header__nav--item h4 {
+  position: relative;
+  display: inline-block; // Limita el ancho al contenido
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.header__nav--item h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; // Ajusta la distancia del subrayado
+  width: 0;
+  height: 1px;
+  background-color: $color-primary;
+  transition: width 0.3s ease;
+}
+
+.header__nav--item:hover h4::after {
+  width: 100%; // Se expande solo hasta el tamaño del texto
+}
+
+.header--title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/**CONTACT BTN**/
+.header__contact {
+  padding: 0 2rem;
+  color: $color-primary;
+  cursor: pointer;
+  line-height: 45px;
+}
+
+.btn {
+  position: relative;
+  color: $color-primary;
+  transition: color 0.3s ease-in-out;
+
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: $color-primary;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: stroke-width 0.35s linear, stroke-dasharray 0.35s linear;
+  }
+}
+
+.btn:hover {
+  border-radius: 5px;
+  background-color: rgba($color-secondary, 0.2);
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: stroke-width 1.35s cubic-bezier(0.19, 1, 0.22, 1), stroke-dasharray 1.35s cubic-bezier(0.19, 1, 0.22, 1), stroke-dashoffset 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+/**END CONTACT BTN**/
+
+/**HEADER MOBILE**/
+.header__icons--mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 0 1rem;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: $color-secondary;
+  border-bottom: 1px solid gainsboro;
+
+  .header--icon {
+    max-width: 34px;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
+.header__nav__mobile {
+  position: absolute;
+  top: -100%; // Ocultar inicialmente
+  left: 0;
+  width: 100%;
+  background-color: $color-secondary;
+  z-index: 998;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+  transition: top 0.4s ease-in-out; // Agregamos transición para suavizar el deslizamiento
+
+  a {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  &.open {
+    top: 60px; // Mostrar cuando está abierto
+  }
+}
+
+.header__contact--mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-secondary;
+  background-color: $color-primary;
+  margin: 1.2rem 0;
+  padding: 1.2rem 0;
+  border-radius: 5rem;
+}
+/**END HEADER MOBILE**/
+
+/**MEDIA QUERIES**/
+@media only screen and (max-width: $mq1) {
+  .header__nav__desktop {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: $mq3) {
+  .desktop {
+    display: none;
+    opacity: 0;
+  }
+  .mobile {
+    display: block;
+    opacity: 1;
+  }
+  header {
+    height: 60px;
+  }
+}
+
+/**END MEDIA QUERIES**/

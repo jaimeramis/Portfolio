@@ -1,28 +1,45 @@
-import { withNamespaces } from "react-i18next";
-import urls from "../data/urls.json";
-
-function About({ t }) {
+function About() {
   return (
-    <section id="about" className="portfolio__intro_container">
-      <div className="portfolio__intro_info">
-        <h1 className="pb30">{t("aboutTitle")}</h1>
-        <h3>{t("aboutSubtitle")}</h3>
-        <p>{t("aboutText")}</p>
-        <div className="portfolio__intro_profiles">
-          <a href={urls.trailhead} rel="noreferrer" target="_blank">
-            <img className="trailhead" src="/images/trailhead_logo.png" alt="TrailHead" />
-          </a>
-          <a href={urls.linkedln} rel="noreferrer" target="_blank">
-            <img className="linkdln" src="/images/linkdln_logo.png" alt="Linkedln" />
-          </a>
-          <a href={urls.github} rel="noreferrer" target="_blank">
-            <img className="github" src="/images/github_logo.png" alt="GitHub" />
-          </a>
+    <div className="about-box" id="about">
+      <div className="about__content">
+        <div className="about__profile">
+          <div className="about__profile--section">
+            <img src="/images/info-icons/icon.svg" />
+            <p>About me</p>
+          </div>
+          <div className="about__profile--title">
+            <h4>
+              The fusion between creativity and technology.
+              <br />
+              With the aim of obtaining innovative solutions in all my projects.
+            </h4>
+          </div>
+          <div className="about__profile--text">
+            <p>
+              I am passionate about topics such as video games, movies and series trying to use them as a motivator when I do a more personal project. I am very sociable and communicative and I am
+              able to adapt quickly to new processes and equipment. I leave you my <b>Social Media</b> below:
+            </p>
+          </div>
         </div>
+        {/* SOCIAL MEDIA */}
+        <div className="about__media">
+          <div className="about__social__media">
+            <div className="about__social__media--item">
+              <a href="https://github.com/jaimeramis" target="_blank">
+                <img src="/images/social-icons/github.svg" alt="Github" />
+              </a>
+            </div>
+            <div className="about__social__media--item">
+              <a href="https://www.linkedin.com/in/jaimeramisbarber/" target="_blank">
+                <img src="/images/social-icons/linkedin.svg" alt="LinkedIn" />
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* END SOCIAL MEDIA*/}
       </div>
-      <div className="portfolio__intro_image"></div>
-    </section>
+    </div>
   );
 }
 
-export default withNamespaces()(About);
+export default About;

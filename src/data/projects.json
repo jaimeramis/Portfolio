@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Mahou - Website",
+    "type": "<b>Type:</b> Team Project",
+    "role": "<b>Role:</b> Developer",
+    "stack": "<b>Main Stack:</b> HTML, CSS, JS, HUGO, VITE",
+    "live": "https://www.mahou.es/",
+    "documentation": "https://www.behance.net/gallery/222877565/WebPage-Mahou",
+    "image": "mahou",
+    "trigger": "btn-active"
+  },
+  {
+    "title": "NEOM - Webforms",
+    "type": "<b>Type:</b> Individual Project",
+    "role": "<b>Role:</b> Lead Developer",
+    "stack": "<b>Main Stack:</b> HTML, CSS, JS, VITE",
+    "live": "https://neomform02.netlify.app/",
+    "documentation": "https://www.behance.net/gallery/222878107/WebPages-Newsletters-NEOM",
+    "image": "neom",
+    "trigger": "btn-active"
+  },
+  {
+    "title": "50&50 - POC (Proof of concept)",
+    "type": "<b>Type:</b> Individual Project",
+    "role": "<b>Role:</b> Developer",
+    "stack": "<b>Main Stack:</b> HTML, CSS, JS, REACT, VITE",
+    "live": "https://5050gl.netlify.app/",
+    "documentation": "#",
+    "image": "gl",
+    "trigger": "btn-none"
+  },
+  {
+    "title": "Cerave - Webpage",
+    "type": "<b>Type:</b> Individual Project",
+    "role": "<b>Role:</b> Developer",
+    "stack": "<b>Main Stack:</b> HTML, CSS, JS, VITE",
+    "live": "https://mrm-cerave.netlify.app/",
+    "documentation": "#",
+    "image": "cerave",
+    "trigger": "btn-none"
+  },
+  {
+    "title": "Sanofi - Webpage Fashion Cramps",
+    "type": "<b>Type:</b> Individual Project",
+    "role": "<b>Role:</b> Developer",
+    "stack": "<b>Main Stack:</b> HTML, CSS, JS, REACT, VITE",
+    "live": "https://mrm-sanofi-fashioncramps.netlify.app/",
+    "documentation": "#",
+    "image": "fashion",
+    "trigger": "btn-none"
+  },
+  {
+    "title": "Sanofi - Webpage Ready Player Mom",
+    "type": "<b>Type:</b> Individual Project",
+    "role": "<b>Role:</b> Developer",
+    "stack": "<b>Main Stack:</b> HTML, CSS, JS, REACT, VITE",
+    "live": "https://mrm-sanofi-readyplayermom.netlify.app/",
+    "documentation": "#",
+    "image": "player",
+    "trigger": "btn-none"
+  }
+]

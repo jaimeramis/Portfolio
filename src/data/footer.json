@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/natgeo/",
+    "img": "facebook.svg",
+    "value": 195.6,
+    "text": "GLOBAL FANS"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/natgeo/",
+    "img": "instagram.svg",
+    "value": 224.1,
+    "text": "FOLLOWERS"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://x.com/natgeo/",
+    "img": "x.svg",
+    "value": 46.2,
+    "text": "FOLLOWERS"
+  },
+  {
+    "name": "TikTok",
+    "url": "https://www.tiktok.com/@natgeo",
+    "img": "tiktok.svg",
+    "value": 52.9,
+    "text": "FOLLOWERS"
+  },
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A",
+    "img": "youtube.svg",
+    "value": 195.6,
+    "text": "SUSCRIBERS"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/company/national-geographic/",
+    "img": "linkdln.svg",
+    "value": 2.8,
+    "text": "FOLLOWERS"
+  }
+]

@@ -1,0 +1,152 @@
+@use "base" as *;
+
+.about-box {
+  background-color: $color-terciary;
+
+  .about__content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about__profile {
+    width: 60%;
+    .about__profile--section {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    .about__profile--title {
+      font-family: "Gotham-Light", arial, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      padding-bottom: 10px;
+    }
+
+    .about__profile--text {
+      font-size: 16px;
+    }
+  }
+
+  .about__media {
+    padding: 1rem 0;
+    .about__social__media {
+      display: flex;
+      align-items: center;
+
+      .about__social__media--item {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 1rem;
+          cursor: pointer;
+          transition: transform 0.4s ease, color 0.3s ease;
+
+          &:hover {
+            transform: translateY(-5px); /* Mueve el título hacia arriba */
+          }
+        }
+
+        img {
+          width: 64px;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+/**MEDIA QUERIES**/
+@media only screen and (max-width: $mq1) {
+  .about-box {
+    .about__profile {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: $mq2) {
+  .about-box {
+    .about__content {
+      padding: 4rem 0;
+    }
+  }
+}
+@media only screen and (max-width: $mq4) {
+  .about-box {
+    .about__profile {
+      .about__profile--section {
+        font-size: 1rem;
+      }
+
+      .about__profile--title {
+        font-size: 2rem;
+      }
+
+      .about__profile--text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq5) {
+  .about-box {
+    .about__profile {
+      .about__profile--section {
+        font-size: 1rem;
+      }
+
+      .about__profile--title {
+        font-size: 1.6rem;
+      }
+
+      .about__profile--text {
+        font-size: 0.8rem;
+      }
+    }
+
+    .about__media {
+      .about__social__media {
+        .about__social__media--item {
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq6) {
+  .about-box {
+    .about__content {
+      padding: 2rem 0;
+    }
+  }
+}
+@media only screen and (max-width: $mq7) {
+  .about-box {
+    .about__profile {
+      .about__profile--section {
+        font-size: 1rem;
+      }
+
+      .about__profile--title {
+        font-size: 1.4rem;
+      }
+
+      .about__profile--text {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+/**END MEDIA QUERIES**/

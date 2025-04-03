@@ -1,0 +1,75 @@
+/* VARIABLES SASS*/
+/* COLOR VARIABLES */
+$color-primary: #333333;
+$color-secondary: #ffffff;
+$color-terciary: #f4f5eb;
+$bg-app: #fafafa;
+/* END COLOR VARIABLES */
+
+// JUMPS MQ
+$mq0: 1360px;
+$mq1: 1024px;
+$mq2: 840px;
+$mq3: 700px;
+$mq4: 570px;
+$mq5: 420px;
+$mq6: 360px;
+$mq7: 320px;
+$mq8: 245px;
+// END JUMPS MQ
+/* END VARIABLES SASS*/
+
+/* GENERAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gotham-Bold", arial, sans-serif;
+}
+
+h4,
+p {
+  font-family: "Segoe UI", arial, sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+body {
+  color: $color-primary;
+  background-color: $bg-app;
+}
+/* END GENERAL SETTINGS */
+
+/**MEDIA QUERIES**/
+@media only screen and (max-width: $mq0) {
+}
+@media only screen and (max-width: $mq1) {
+}
+@media only screen and (max-width: $mq2) {
+}
+@media only screen and (max-width: $mq3) {
+}
+@media only screen and (max-width: $mq4) {
+}
+@media only screen and (max-width: $mq5) {
+}
+@media only screen and (max-width: $mq6) {
+}
+@media only screen and (max-width: $mq7) {
+}
+@media only screen and (max-width: $mq8) {
+}
+/**END MEDIA QUERIES**/

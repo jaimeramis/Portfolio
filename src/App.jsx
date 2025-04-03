@@ -1,19 +1,22 @@
-import "../src/scss/style.css";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import About from "./components/About";
-import Footer from "./components/Footer";
-import Clients from "./components/Clients";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
+import Clients from "./components/clients";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <>
-      <Nav />
-      <About />
-      <Skills />
-      <Projects />
-      <Clients />
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Technologies />
+        <Clients />
+      </main>
       <Footer />
     </>
   );

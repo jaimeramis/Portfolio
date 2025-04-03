@@ -1,0 +1,148 @@
+@use "base" as *;
+
+.technology-box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .technology__profile {
+    padding-bottom: 1rem;
+  }
+
+  .technology__profile--section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .technology__profile--title {
+    font-family: "Gotham-Light", arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  .technology__profile--text {
+    font-size: 16px;
+  }
+
+  .technology__stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    flex-wrap: wrap;
+
+    .technology__stack--item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: default;
+      padding: 2rem 0;
+
+      img {
+        width: 90px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          transform: translateY(-10px); /* Desplazar la imagen hacia arriba */
+        }
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        padding-top: 10px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/**MEDIA QUERIES**/
+@media only screen and (max-width: $mq2) {
+  .technology-box {
+    padding: 4rem 0;
+  }
+}
+@media only screen and (max-width: $mq4) {
+  .technology-box {
+    .technology__profile--section {
+      font-size: 1rem;
+    }
+
+    .technology__profile--title {
+      font-size: 2rem;
+    }
+
+    .technology__profile--text {
+      font-size: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: $mq5) {
+  .technology-box {
+    .technology__profile--section {
+      font-size: 1rem;
+    }
+
+    .technology__profile--title {
+      font-size: 1.6rem;
+    }
+
+    .technology__profile--text {
+      font-size: 0.8rem;
+    }
+
+    .technology__stack {
+      gap: 2rem;
+
+      .technology__stack--item {
+        img {
+          width: 60px;
+        }
+        h4 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mq6) {
+  .technology-box {
+    padding: 2rem 0;
+  }
+}
+@media only screen and (max-width: $mq7) {
+  .technology-box {
+    .technology__profile--section {
+      font-size: 1rem;
+    }
+
+    .technology__profile--title {
+      font-size: 1.4rem;
+    }
+
+    .technology__profile--text {
+      font-size: 0.8rem;
+    }
+    .technology__stack {
+      .technology__stack--item {
+        img {
+          width: 75px;
+        }
+      }
+    }
+  }
+}
+/**END MEDIA QUERIES**/

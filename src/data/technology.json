@@ -1,0 +1,46 @@
+[
+  {
+    "title": "HTML",
+    "image": "/images/technology-icons/html.svg"
+  },
+  {
+    "title": "CSS",
+    "image": "/images/technology-icons/css.svg"
+  },
+  {
+    "title": "SASS",
+    "image": "/images/technology-icons/sass.svg"
+  },
+  {
+    "title": "BOOTSTRAP",
+    "image": "/images/technology-icons/bootstrap.svg"
+  },
+  {
+    "title": "TAILWIND",
+    "image": "/images/technology-icons/tailwind.svg"
+  },
+  {
+    "title": "JS",
+    "image": "/images/technology-icons/js.svg"
+  },
+  {
+    "title": "REACT",
+    "image": "/images/technology-icons/react.svg"
+  },
+  {
+    "title": "VITE",
+    "image": "/images/technology-icons/vite.svg"
+  },
+  {
+    "title": "GIT // GITHUB",
+    "image": "/images/technology-icons/git.svg"
+  },
+  {
+    "title": "FIGMA",
+    "image": "/images/technology-icons/figma.svg"
+  },
+  {
+    "title": "PHOTOSHOP",
+    "image": "/images/technology-icons/photoshop.svg"
+  }
+]

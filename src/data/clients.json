@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Iberia",
+    "image": "/images/clients/iberia.png"
+  },
+  {
+    "title": "Inditex",
+    "image": "/images/clients/inditex.png"
+  },
+  {
+    "title": "Mahou",
+    "image": "/images/clients/mahou.png"
+  },
+  {
+    "title": "Microsoft",
+    "image": "/images/clients/microsoft.png"
+  },
+
+  {
+    "title": "Opel",
+    "image": "/images/clients/opel.png"
+  },
+  {
+    "title": "Movistar",
+    "image": "/images/clients/movistar.png"
+  },
+  {
+    "title": "CocaCola",
+    "image": "/images/clients/cocaCola.png"
+  },
+  {
+    "title": "BurgerKing",
+    "image": "/images/clients/burgerKing.png"
+  },
+
+  {
+    "title": "Santander",
+    "image": "/images/clients/santander.png"
+  },
+  {
+    "title": "Opel",
+    "image": "/images/clients/opel.png"
+  },
+  {
+    "title": "PortAventura",
+    "image": "/images/clients/paw.png"
+  },
+  {
+    "title": "Mastercard",
+    "image": "/images/clients/mastercard.png"
+  },
+  {
+    "title": "Loreal",
+    "image": "/images/clients/loreal.png"
+  },
+  {
+    "title": "Ikea",
+    "image": "/images/clients/ikea.png"
+  },
+  {
+    "title": "Caprabo",
+    "image": "/images/clients/caprabo.png"
+  }
+]
