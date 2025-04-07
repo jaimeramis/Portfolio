@@ -7,10 +7,10 @@ function Clients() {
         <div className="clients__profile">
           <div className="clients__profile--section">
             <img src="/images/info-icons/icon.svg" alt="Project Icon" />
-            <p>Technological Stack</p>
+            <p>Clients</p>
           </div>
           <div className="clients__profile--title">
-            <h4>Actual Profiency</h4>
+            <h4>I have work with</h4>
           </div>
         </div>
         <div className="clients__stack">
