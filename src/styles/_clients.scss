@@ -53,6 +53,8 @@
 
         img {
           width: 13rem;
+          height: 7rem;
+          object-fit: contain;
         }
       }
     }
@@ -101,6 +103,8 @@
         .clients__stack--item {
           img {
             width: 10rem;
+            height: 5.5rem;
+            object-fit: contain;
           }
         }
       }
@@ -116,6 +120,8 @@
         .clients__stack--item {
           img {
             width: 9rem;
+            height: 5rem;
+            object-fit: contain;
           }
         }
       }
@@ -141,6 +147,8 @@
         .clients__stack--item {
           img {
             width: 8rem;
+            height: 4.5rem;
+            object-fit: contain;
           }
         }
       }

@@ -28,6 +28,41 @@ $mq8: 245px;
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+%nav-item {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Segoe UI", arial, sans-serif;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    background-color: $color-primary;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 h1,
@@ -50,6 +85,26 @@ a {
 body {
   color: $color-primary;
   background-color: $bg-app;
+}
+
+:focus-visible {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background-color: $color-primary;
+  color: $color-secondary;
+  font-size: 1rem;
+
+  &:focus {
+    top: 0;
+  }
 }
 /* END GENERAL SETTINGS */
 

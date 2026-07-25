@@ -1,0 +1,59 @@
+{
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Technologies", "href": "#technologies" },
+    { "label": "Clients", "href": "#clients" }
+  ],
+  "app": {
+    "skipLink": "Skip to main content"
+  },
+  "header": {
+    "brand": "Jaime",
+    "menuAriaLabel": "Toggle menu",
+    "navAriaLabel": "Main"
+  },
+  "hero": {
+    "greetingLine1": "Hey there, I'm",
+    "greetingName": "Jaime Ramis",
+    "subtitle": "FRONT END DEVELOPER",
+    "textLine1": "And this is",
+    "textPrefix": "my",
+    "textHighlight": "Web Portfolio"
+  },
+  "about": {
+    "sectionTitle": "About me",
+    "title": "The fusion between creativity and technology.<br />With the aim of obtaining innovative solutions in all my projects.",
+    "text": "I am passionate about topics such as video games, movies and series trying to use them as a motivator when I do a more personal project. I am very sociable and communicative and I am able to adapt quickly to new processes and equipment. I leave you my <b>Social Media</b> below:",
+    "socialLinks": [
+      {
+        "alt": "Github",
+        "url": "https://github.com/jaimeramis",
+        "icon": "/images/social-icons/github.svg"
+      },
+      {
+        "alt": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jaimeramisbarber/",
+        "icon": "/images/social-icons/linkedin.svg"
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "My Projects",
+    "sectionSubtitle": "Selected Works",
+    "btnLive": "Live Work",
+    "btnDocumentation": "Documentation Work"
+  },
+  "technologies": {
+    "sectionTitle": "Technological Stack",
+    "sectionSubtitle": "Actual Profiency"
+  },
+  "clients": {
+    "sectionTitle": "Clients",
+    "sectionSubtitle": "I have work with"
+  },
+  "footer": {
+    "copyright": "©2025 Jaime Ramis. All rights reserved",
+    "navAriaLabel": "Footer"
+  }
+}

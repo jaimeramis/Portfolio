@@ -15,7 +15,6 @@
     "title": "Microsoft",
     "image": "/images/clients/microsoft.png"
   },
-
   {
     "title": "Opel",
     "image": "/images/clients/opel.png"
@@ -32,14 +31,9 @@
     "title": "BurgerKing",
     "image": "/images/clients/burgerKing.png"
   },
-
   {
     "title": "Santander",
     "image": "/images/clients/santander.png"
-  },
-  {
-    "title": "Opel",
-    "image": "/images/clients/opel.png"
   },
   {
     "title": "PortAventura",
@@ -60,5 +54,9 @@
   {
     "title": "Caprabo",
     "image": "/images/clients/caprabo.png"
+  },
+  {
+    "title": "El Corte Inglés",
+    "image": "/images/clients/VECI.jpg"
   }
 ]

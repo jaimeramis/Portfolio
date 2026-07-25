@@ -37,26 +37,8 @@ header {
   margin: 0 auto;
 }
 
-.header__nav--item h4 {
-  position: relative;
-  display: inline-block; // Limita el ancho al contenido
-  transition: color 0.3s ease;
-  font-size: 16px;
-}
-
-.header__nav--item h4::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px; // Ajusta la distancia del subrayado
-  width: 0;
-  height: 1px;
-  background-color: $color-primary;
-  transition: width 0.3s ease;
-}
-
-.header__nav--item:hover h4::after {
-  width: 100%; // Se expande solo hasta el tamaño del texto
+.header__nav--item {
+  @extend %nav-item;
 }
 
 .header--title {

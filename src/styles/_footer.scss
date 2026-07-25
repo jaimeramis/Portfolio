@@ -20,26 +20,8 @@ footer {
       align-items: center;
       gap: 2rem;
 
-      .footer__nav--item h4 {
-        position: relative;
-        display: inline-block;
-        transition: color 0.3s ease;
-        font-size: 16px;
-      }
-
-      .footer__nav--item h4::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        width: 0;
-        height: 1px;
-        background-color: $color-primary;
-        transition: width 0.3s ease;
-      }
-
-      .footer__nav--item:hover h4::after {
-        width: 100%;
+      .footer__nav--item {
+        @extend %nav-item;
       }
     }
   }
@@ -62,7 +44,7 @@ footer {
       .footer__nav {
         gap: 1rem;
 
-        .footer__nav--item h4 {
+        .footer__nav--item {
           font-size: 14px;
         }
       }
